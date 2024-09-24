@@ -7,3 +7,6 @@ a {
   color: whitesmoke;
   padding: 20px;
 }
+a:visited {
+  color: whitesmoke;
+}
