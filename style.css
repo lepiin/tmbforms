@@ -3,3 +3,7 @@ body {
   color: whitesmoke;
   font-family: Lato;
 }
+a {
+  color: whitesmoke;
+  padding: 20px;
+}
