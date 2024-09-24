@@ -1,7 +1,8 @@
 body {
   background-color: #2d2a2e;
   color: whitesmoke;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
+  /* text-align: center; */
 }
 a {
   color: whitesmoke;
@@ -9,4 +10,13 @@ a {
 }
 a:visited {
   color: whitesmoke;
+}
+button {
+  margin: 10px;
+  padding: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: rgb(46, 51, 51);
+  color: whitesmoke;
+  width: 300px;
 }
