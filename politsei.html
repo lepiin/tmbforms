@@ -4,35 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Politsei</title>
 </head>
 
 <body>
     <h1>Politsei</h1>
     <form></form>
-    <label for="perenimi">Perenimi:</label><br>
-    <input type="text" id="perenimi" name="perenimi"><br>
+    <label for="perenimi">Surnu:</label><br>
+    <input type="text" id="perenimi" name="perenimi" placeholder="Perenimi"><br>
 
-    <label for="eesnimi">Eesnimi:</label><br>
-    <input type="text" id="eesnimi" name="eesnimi"><br>
+    <label for="eesnimi"></label><br>
+    <input type="text" id="eesnimi" name="eesnimi" placeholder="Eesnimi"><br>
 
-    <label for="isikukood">Isikukood:</label><br>
-    <input type="text" id="isikukood" name="isikukood"><br>
+    <label for="isikukood"></label><br>
+    <input type="text" id="isikukood" name="isikukood" placeholder="Isikukood"><br>
+    <hr>
 
-    <label for="politsei">Politsei esindaja:</label><br>
-    <input type="text" id="politsei" name="politsei"><br>
+    <label for="politsei">Politsei:</label><br>
+    <input type="text" id="politsei" name="politsei" placeholder="Politsei esindaja"><br>
 
-    <label>Politsei jaoskond:</label><br>
+    <label></label><br>
     <input type="radio" name="jaoskond" value="must"> Ida-Harju<br>
     <input type="radio" name="jaoskond" value="dia"> Lääne-Harju<br>
     <input type="radio" name="jaoskond" value="onko"> PERH<br>
     <input type="radio" name="jaoskond" value="muu"> <input type="text" name="muu"><br>
+    <hr>
 
-    <label>Omastele antud reklaam:</label><br>
-    <input type="checkbox" name="reklaam" value="jah"> Jah<br>
+    <label></label><br>
+    <input type="checkbox" name="reklaam" value="jah"> Reklaam omastele<br>
+    <hr>
 
 
-    <label>Vedajad:</label><br>
+    <label></label><br>
     <input type="checkbox" name="vedajad" value="indrek"> Indrek<br>
     <input type="checkbox" name="vedajad" value="kaimo"> Kaimo<br>
     <input type="checkbox" name="vedajad" value="mairolt"> Mairolt<br>
@@ -43,12 +52,15 @@
     <input type="checkbox" name="vedajad" value="taavi"> Taavi<br>
     <input type="checkbox" name="vedajad" value="rain"> Rain<br>
     <input type="checkbox" name="vedajad" value="muu"> <input type="text" name="muu"><br>
+    <hr>
 
-    <label>Topeltasu:</label><br>
-    <input type="checkbox" name="topelttasu" value="jah"> Jah<br>
+    <label></label><br>
+    <input type="checkbox" name="topelttasu" value="jah"> Topelttasu<br>
+    <hr>
 
-    <label for="markused">Märkused:</label><br>
-    <input type="text" id="ma" name="perenimi"><br>
+    <label for="markused"></label><br>
+    <input type="text" id="ma" name="perenimi" placeholder="Märkused"><br>
+    <hr>
 
     <input type="submit" value="Submit">
     </form>
