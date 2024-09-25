@@ -16,58 +16,59 @@
 
 <body>
     <h1>Politsei</h1>
-    <form></form>
-    <label for="perenimi">Surnu:</label><br>
-    <input type="text" id="perenimi" name="perenimi" placeholder="Perenimi"><br>
+    <form>
+        <div class="name">
+            <label for="perenimi">Surnu:</label><br>
+            <input type="text" id="perenimi" name="perenimi" placeholder="Perenimi"><br>
 
-    <label for="eesnimi"></label><br>
-    <input type="text" id="eesnimi" name="eesnimi" placeholder="Eesnimi"><br>
+            <label for="eesnimi"></label><br>
+            <input type="text" id="eesnimi" name="eesnimi" placeholder="Eesnimi"><br>
 
-    <label for="isikukood"></label><br>
-    <input type="text" id="isikukood" name="isikukood" placeholder="Isikukood"><br>
-    <hr>
+            <label for="isikukood"></label><br>
+            <input type="text" id="isikukood" name="isikukood" placeholder="Isikukood"><br>
+        </div>
+        <div class="name">
+            <label for="politsei">Politsei:</label><br>
+            <input type="text" id="politsei" name="politsei" placeholder="Politsei esindaja"><br>
 
-    <label for="politsei">Politsei:</label><br>
-    <input type="text" id="politsei" name="politsei" placeholder="Politsei esindaja"><br>
+            <label></label><br>
+            <input type="radio" name="jaoskond" value="must"> Ida-Harju<br>
+            <input type="radio" name="jaoskond" value="dia"> Lääne-Harju<br>
+            <input type="radio" name="jaoskond" value="onko"> PERH<br>
+            <input type="radio" name="jaoskond" value="muu"> <input type="text" name="muu"><br>
+        </div>
 
-    <label></label><br>
-    <input type="radio" name="jaoskond" value="must"> Ida-Harju<br>
-    <input type="radio" name="jaoskond" value="dia"> Lääne-Harju<br>
-    <input type="radio" name="jaoskond" value="onko"> PERH<br>
-    <input type="radio" name="jaoskond" value="muu"> <input type="text" name="muu"><br>
-    <hr>
-
-    <label></label><br>
-    <input type="checkbox" name="reklaam" value="jah"> Reklaam omastele<br>
-    <hr>
+        <div class="name">
+            <input type="checkbox" name="reklaam" value="jah"> Reklaam omastele<br>
+        </div>
 
 
-    <label></label><br>
-    <input type="checkbox" name="vedajad" value="indrek"> Indrek<br>
-    <input type="checkbox" name="vedajad" value="kaimo"> Kaimo<br>
-    <input type="checkbox" name="vedajad" value="mairolt"> Mairolt<br>
-    <input type="checkbox" name="vedajad" value="raigo"> Raigo<br>
-    <input type="checkbox" name="vedajad" value="toomasj"> ToomasJ<br>
-    <input type="checkbox" name="vedajad" value="tarmo"> Tarmo<br>
-    <input type="checkbox" name="vedajad" value="toomasd"> ToomasD<br>
-    <input type="checkbox" name="vedajad" value="taavi"> Taavi<br>
-    <input type="checkbox" name="vedajad" value="rain"> Rain<br>
-    <input type="checkbox" name="vedajad" value="muu"> <input type="text" name="muu"><br>
-    <hr>
+        <div class="name">
+            <input type="checkbox" name="vedajad" value="indrek"> Indrek<br>
+            <input type="checkbox" name="vedajad" value="kaimo"> Kaimo<br>
+            <input type="checkbox" name="vedajad" value="mairolt"> Mairolt<br>
+            <input type="checkbox" name="vedajad" value="raigo"> Raigo<br>
+            <input type="checkbox" name="vedajad" value="toomasj"> ToomasJ<br>
+            <input type="checkbox" name="vedajad" value="tarmo"> Tarmo<br>
+            <input type="checkbox" name="vedajad" value="toomasd"> ToomasD<br>
+            <input type="checkbox" name="vedajad" value="taavi"> Taavi<br>
+            <input type="checkbox" name="vedajad" value="rain"> Rain<br>
+            <input type="checkbox" name="vedajad" value="muu"> <input type="text" name="muu"><br>
+        </div>
 
-    <label></label><br>
-    <input type="checkbox" name="topelttasu" value="jah"> Topelttasu<br>
-    <hr>
+        <div class="name">
+            <input type="checkbox" name="topelttasu" value="jah"> Topelttasu<br>
+        </div>
 
-    <label for="markused"></label><br>
-    <input type="text" id="ma" name="perenimi" placeholder="Märkused"><br>
-    <hr>
+        <div class="name">
+            <input type="text" id="ma" name="perenimi" placeholder="Märkused"><br>
+        </div>
 
-    <input type="submit" value="Submit">
+        <div class="name">
+            <input type="submit" value="SALVESTA">
+        </div>
     </form>
 
-    <hr>
-    <a href="index.html">Tagasi</a>
 
 </body>
 

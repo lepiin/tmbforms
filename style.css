@@ -1,33 +1,76 @@
+:root {
+  --dark-blue: #001f3f;
+  --mid-blue: #3a6d8c;
+  --light-blue: #6a9ab0;
+  --beige: #ead8b1;
+  --font: "Lato", sans-serif;
+}
+
 body {
-  background-color: #001f3f;
-  color: #ead8b1;
-  font-family: "Lato", sans-serif;
-  /* text-align: center; */
+  background-color: var(--dark-blue);
+  color: var(--beige);
+  font-family: var(--font);
 }
-a {
-  color: #ead8b1;
-  padding: 20px;
-}
-a:visited {
-  color: #ead8b1;
-}
+
 .bigbtn {
-  font-family: "Lato", sans-serif;
+  font-family: var(--font);
   font-size: 2rem;
   font-weight: bold;
-  background-color: #3a6d8c;
-  color: #ead8b1;
+  background-color: var(--mid-blue);
+  color: var(--beige);
   width: 80%;
   margin: 10px;
   padding: 40px;
   border-radius: 10px;
   border: none;
-  /* border: 3px solid #ead8b1; */
 }
+
+input[type="submit"] {
+  font-family: var(--font);
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: var(--mid-blue);
+  color: var(--beige);
+  /* width: 100%; */
+  margin: 10px;
+  padding: 60px;
+  border-radius: 10px;
+  border: none;
+}
+
 h1,
 div {
   text-align: center;
 }
+
+.name {
+  background-color: var(--light-blue);
+  text-align: left;
+  color: var(--dark-blue);
+  margin: 10%;
+  padding: 30px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+input[type="submit"] {
+  width: 90%;
+  height: 30px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  height: 24px;
+  transform: scale(1.5);
+}
+
 input[type="text"] {
+  height: 24px;
   text-transform: uppercase;
+  font-size: 1.3rem;
+  width: 70%;
+  font-weight: bold;
+  background-color: var(--light-blue);
+  font-family: var(--font);
+  color: var(--dark-blue);
 }
