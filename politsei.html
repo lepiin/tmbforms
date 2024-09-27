@@ -16,57 +16,103 @@
 
 <body>
     <h1>Politsei</h1>
-    <form>
-        <div class="name">
-            <label for="perenimi">Surnu:</label><br>
-            <input type="text" id="perenimi" name="perenimi" placeholder="Perenimi"><br>
+    <form action="/tacos">
 
-            <label for="eesnimi"></label><br>
-            <input type="text" id="eesnimi" name="eesnimi" placeholder="Eesnimi"><br>
-
-            <label for="isikukood"></label><br>
-            <input type="text" id="isikukood" name="isikukood" placeholder="Isikukood"><br>
-        </div>
-        <div class="name">
-            <label for="politsei">Politsei:</label><br>
-            <input type="text" id="politsei" name="politsei" placeholder="Politsei esindaja"><br>
-
-            <label></label><br>
-            <input type="radio" name="jaoskond" value="must"> Ida-Harju<br>
-            <input type="radio" name="jaoskond" value="dia"> Lääne-Harju<br>
-            <input type="radio" name="jaoskond" value="onko"> PERH<br>
-            <input type="radio" name="jaoskond" value="muu"> <input type="text" name="muu"><br>
+        <div class="block" id="pol-surnu-block">
+            <h2>surnu:</h2>
+            <div class="textbox">
+                <input type="text" id="pol-perenimi" name="perenimi" placeholder="Perenimi">
+            </div>
+            <div class="textbox">
+                <input type="text" id="pol-eesnimi" name="eesnimi" placeholder="Eesnimi">
+            </div>
+            <div class="textbox">
+                <input type="text" id="pol-isikukood" name="isikukood" placeholder="Isikukood">
+            </div>
         </div>
 
-        <div class="name">
-            <input type="checkbox" name="reklaam" value="jah"> Reklaam omastele<br>
+        <div class="block" id="pol-politsei-block">
+            <h2>politsei:</h2>
+            <div class="textbox">
+                <input type="text" id="pol-politsei-nimi" name="politsei" placeholder="Politsei esindaja">
+            </div>
+
+            <div class="choice">
+                <input type="radio" name="jaoskond" id="pol-idaharju" value="idaharju">
+                <label for="pol-idaharju">Ida-Harju</label>
+            </div>
+            <div class="choice">
+                <input type="radio" name="jaoskond" id="pol-laaneharju" value="laaneharju">
+                <label for="pol-laaneharju">Lääne-Harju</label>
+            </div>
+            <div class="choice">
+                <input type="radio" name="jaoskond" id="pol-perh" value="perh">
+                <label for="pol-perh">PERH</label>
+            </div>
+
         </div>
 
-
-        <div class="name">
-            <input type="checkbox" name="vedajad" value="indrek"> Indrek<br>
-            <input type="checkbox" name="vedajad" value="kaimo"> Kaimo<br>
-            <input type="checkbox" name="vedajad" value="mairolt"> Mairolt<br>
-            <input type="checkbox" name="vedajad" value="raigo"> Raigo<br>
-            <input type="checkbox" name="vedajad" value="toomasj"> ToomasJ<br>
-            <input type="checkbox" name="vedajad" value="tarmo"> Tarmo<br>
-            <input type="checkbox" name="vedajad" value="toomasd"> ToomasD<br>
-            <input type="checkbox" name="vedajad" value="taavi"> Taavi<br>
-            <input type="checkbox" name="vedajad" value="rain"> Rain<br>
-            <input type="checkbox" name="vedajad" value="muu"> <input type="text" name="muu"><br>
+        <div class="block" id="pol-reklaam-block">
+            <div class="choice">
+                <input type="checkbox" name="reklaam" id="pol-reklaam">
+                <label for="pol-reklaam">Reklaam Omastele</label>
+            </div>
         </div>
 
-        <div class="name">
-            <input type="checkbox" name="topelttasu" value="jah"> Topelttasu<br>
+        <div class="block" id="pol-vedajad-block">
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="pol-indrek" value="indrek">
+                <label for="pol-indrek">Indrek</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="pol-kaimo" value="kaimo">
+                <label for="pol-kaimo">Kaimo</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="pol-mairolt" value="mairolt">
+                <label for="pol-mairolt">Mairolt</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="pol-raigo" value="raigo">
+                <label for="pol-raigo">Raigo</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="pol-toomasj" value="toomasj">
+                <label for="pol-toomasj">Toomas J</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="pol-tarmo" value="tarmo">
+                <label for="pol-tarmo">Tarmo</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="pol-toomasd" value="toomasd">
+                <label for="pol-toomasd">Toomas D</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="pol-taavi" value="taavi">
+                <label for="pol-taavi">Taavi</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="pol-rain" value="rain">
+                <label for="pol-rain">Rain</label>
+            </div>
+
         </div>
 
-        <div class="name">
-            <input type="text" id="ma" name="perenimi" placeholder="Märkused"><br>
+        <div class="block" id="pol-topelt-block">
+            <div class="choice">
+                <input type="checkbox" name="topelttasu" id="pol-topelt">
+                <label for="pol-topelt">Topelttasu</label>
+            </div>
         </div>
 
-        <div class="name">
-            <input type="submit" value="SALVESTA">
+        <div class="block" id="pol-markused-block">
+            <div class="textbox">
+                <input type="text" id="pol-markused" name="perenimi" placeholder="Märkused">
+            </div>
         </div>
+
+        <button type="submit">Salvesta</button>
     </form>
 
 

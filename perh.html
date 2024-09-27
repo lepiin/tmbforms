@@ -15,63 +15,136 @@
 </head>
 
 <body>
-
     <h1>PERH</h1>
+    <form action="/tacos">
 
-    <form>
-        <div class="name">
-            <!-- <label for="perenimi"></label><br> -->
-            <input type="text" id="perenimi" name="perenimi" placeholder="Perenimi"><br>
-
-            <label for="eesnimi"></label><br>
-            <input type="text" id="eesnimi" name="eesnimi" placeholder="Eesnimi"><br>
+        <div class="block" id="perh-surnu-block">
+            <div class="textbox">
+                <input type="text" id="perh-perenimi" name="perenimi" placeholder="Perenimi">
+            </div>
+            <div class="textbox">
+                <input type="text" id="perh-eesnimi" name="eesnimi" placeholder="Eesnimi">
+            </div>
         </div>
 
-        <div class="name">
-            <!-- <label></label><br> -->
-            <input type="checkbox" name="kontroll" value="xl"> XL<br>
-            <input type="checkbox" name="kontroll" value="pikk"> Pikk<br>
-            <input type="checkbox" name="kontroll" value="kover"> Kõver<br>
-            <input type="checkbox" name="kontroll" value="nakkus"> Nakkus<br>
-            <input type="checkbox" name="kontroll" value="muu"> <input type="text" name="muu"><br>
+        <div class="block" id="perh-kontroll-block">
+            <div class="choice">
+                <input type="checkbox" name="kontroll" id="perh-xl" value="xl">
+                <label for="perh-xl">XL</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="kontroll" id="perh-pikk" value="pikk">
+                <label for="perh-pikk">Pikk</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="kontroll" id="perh-kover" value="kover">
+                <label for="perh-kover">Kõver</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="kontroll" id="perh-viirus" value="viirus">
+                <label for="perh-viirus">Viirus</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="kontroll" id="perh-kontroll" value="kontroll">
+                <label for="perh-nakkus">Kontroll</label>
+            </div>
         </div>
 
-        <div class="name">
-            <label></label><br>
-            <input type="checkbox" name="vedajad" value="indrek"> Indrek<br>
-            <input type="checkbox" name="vedajad" value="kaimo"> Kaimo<br>
-            <input type="checkbox" name="vedajad" value="mairolt"> Mairolt<br>
-            <input type="checkbox" name="vedajad" value="raigo"> Raigo<br>
-            <input type="checkbox" name="vedajad" value="toomasj"> Toomas J<br>
-            <input type="checkbox" name="vedajad" value="tarmo"> Tarmo<br>
-            <input type="checkbox" name="vedajad" value="toomasd"> Toomas D<br>
-            <input type="checkbox" name="vedajad" value="taavi"> Taavi<br>
-            <input type="checkbox" name="vedajad" value="rain"> Rain<br>
-            <input type="checkbox" name="vedajad" value="muu"> <input type="text" name="muu"><br>
+        <div class="block" id="perh-vedajad-block">
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="perh-indrek" value="indrek">
+                <label for="perh-indrek">Indrek</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="perh-kaimo" value="kaimo">
+                <label for="perh-kaimo">Kaimo</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="perh-mairolt" value="mairolt">
+                <label for="perh-mairolt">Mairolt</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="perh-raigo" value="raigo">
+                <label for="perh-raigo">Raigo</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="perh-toomasj" value="toomasj">
+                <label for="perh-toomasj">Toomas J</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="perh-tarmo" value="tarmo">
+                <label for="perh-tarmo">Tarmo</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="perh-toomasd" value="toomasd">
+                <label for="perh-toomasd">Toomas D</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="perh-taavi" value="taavi">
+                <label for="perh-taavi">Taavi</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="perh-rain" value="rain">
+                <label for="perh-rain">Rain</label>
+            </div>
         </div>
 
-        <div class="name">
-            <input type="checkbox" name="topelttasu" value="jah"> Topelttasu<br>
+        <div class="block" id="perh-topelt-block">
+            <div class="choice">
+                <input type="checkbox" name="topelttasu" id="perh-topelt">
+                <label for="perh-topelt">Topelttasu</label>
+            </div>
         </div>
 
-
-        <div class="name">
-            <input type="radio" name="surma_koht" value="must"> Must<br>
-            <input type="radio" name="surma_koht" value="dia"> Dia<br>
-            <input type="radio" name="surma_koht" value="onko"> Onko<br>
-            <input type="radio" name="surma_koht" value="nahk"> Nahk<br>
-            <input type="radio" name="surma_koht" value="psuhho"> Psühho<br>
-            <input type="radio" name="surma_koht" value="kosekops"> Kose Kops<br>
-            <input type="radio" name="surma_koht" value="sole"> Sõle<br>
-            <input type="radio" name="surma_koht" value="muu"> <input type="text" name="muu"><br>
+        <div class="block" id="perh-surma_koht-block">
+            <div class="choice">
+                <input type="radio" name="surma_koht" id="perh-must" value="must" checked>
+                <label for="perh-must">Must</label>
+            </div>
+            <div class="choice">
+                <input type="radio" name="surma_koht" id="perh-dia" value="dia">
+                <label for="perh-dia">Dia</label>
+            </div>
+            <div class="choice">
+                <input type="radio" name="surma_koht" id="perh-onko" value="onko">
+                <label for="perh-onko">Onko</label>
+            </div>
+            <div class="choice">
+                <input type="radio" name="surma_koht" id="perh-nahk" value="nahk">
+                <label for="perh-nahk">Nahk</label>
+            </div>
+            <div class="choice">
+                <input type="radio" name="surma_koht" id="perh-psuhho" value="psuhho">
+                <label for="perh-psuhho">Psühho</label>
+            </div>
+            <div class="choice">
+                <input type="radio" name="surma_koht" id="perh-kosekops" value="kosekops">
+                <label for="perh-kosekops">Kose Kops</label>
+            </div>
+            <div class="choice">
+                <input type="radio" name="surma_koht" id="perh-sole" value="sole">
+                <label for="perh-sole">Sõle</label>
+            </div>
         </div>
 
-        <div class="name">
-            <input type="submit" value="SALVESTA">
-        </div>
+        <button type="submit">Salvesta</button>
     </form>
-
 
 </body>
 
 </html>
+
+
+
+<!-- 
+
+<form>
+    
+
+    
+
+
+   
+
+    
+</form> -->

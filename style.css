@@ -1,14 +1,13 @@
 :root {
-  --dark-blue: #001f3f;
-  --mid-blue: #3a6d8c;
-  --light-blue: #6a9ab0;
-  --beige: #ead8b1;
+  --dark: #001f3f;
+  --mid: #3a6d8c;
+  --light: #6a9ab0;
   --font: "Lato", sans-serif;
 }
 
 body {
-  background-color: var(--dark-blue);
-  color: var(--beige);
+  background-color: var(--light);
+  color: var(--dark);
   font-family: var(--font);
 }
 
@@ -16,8 +15,8 @@ body {
   font-family: var(--font);
   font-size: 2rem;
   font-weight: bold;
-  background-color: var(--mid-blue);
-  color: var(--beige);
+  background-color: var(--dark);
+  color: var(--light);
   width: 80%;
   margin: 10px;
   padding: 40px;
@@ -25,13 +24,13 @@ body {
   border: none;
 }
 
+/* 
 input[type="submit"] {
   font-family: var(--font);
   font-size: 1.5rem;
   font-weight: bold;
   background-color: var(--mid-blue);
   color: var(--beige);
-  /* width: 100%; */
   margin: 10px;
   padding: 60px;
   border-radius: 10px;
@@ -68,9 +67,10 @@ input[type="text"] {
   height: 24px;
   text-transform: uppercase;
   font-size: 1.3rem;
-  width: 70%;
+  width: 80%;
   font-weight: bold;
+  text-align: center;
   background-color: var(--light-blue);
   font-family: var(--font);
   color: var(--dark-blue);
-}
+} */

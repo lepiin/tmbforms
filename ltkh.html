@@ -16,62 +16,155 @@
 
 <body>
     <h1>LTKH</h1>
-    <form>
-        <div class="name">
-            <input type="text" id="perenimi" name="perenimi" placeholder="Perenimi"><br>
+    <form action="/tacos">
 
-            <label for="eesnimi"></label><br>
-            <input type="text" id="eesnimi" name="eesnimi" placeholder="Eesnimi">
+        <div class="block" id="ltkh-surnu-block">
+            <div class="textbox">
+                <input type="text" id="ltkh-perenimi" name="perenimi" placeholder="Perenimi">
+            </div>
+            <div class="textbox">
+                <input type="text" id="ltkh-eesnimi" name="eesnimi" placeholder="Eesnimi">
+            </div>
         </div>
 
-        <div class="name">
-            <input type="checkbox" name="kontroll" value="xl"> XL<br>
-            <input type="checkbox" name="kontroll" value="pikk"> Pikk<br>
-            <input type="checkbox" name="kontroll" value="kodune"> Kodune<br>
-            <input type="checkbox" name="kontroll" value="kontroll"> Kontroll<br>
-            <input type="checkbox" name="kontroll" value="roisk"> Roisk<br>
-            <input type="checkbox" name="kontroll" value="kover"> Kõver<br>
-            <input type="checkbox" name="kontroll" value="muu"> <input type="text" name="muu"><br>
+        <div class="block" id="ltkh-kontroll-block">
+            <div class="choice">
+                <input type="checkbox" name="kontroll" id="ltkh-xl" value="xl">
+                <label for="ltkh-xl">XL</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="kontroll" id="ltkh-pikk" value="pikk">
+                <label for="ltkh-pikk">Pikk</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="kontroll" id="ltkh-kover" value="kover">
+                <label for="ltkh-kover">Kõver</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="kontroll" id="ltkh-viirus" value="viirus">
+                <label for="ltkh-viirus">Viirus</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="kontroll" id="ltkh-kontroll" value="kontroll">
+                <label for="ltkh-kontroll">Kontroll</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="kontroll" id="ltkh-roisk" value="roisk">
+                <label for="ltkh-roisk">Roisk</label>
+            </div>
+
         </div>
 
-
-        <div class="name">
-            <input type="checkbox" name="vedajad" value="indrek"> Indrek<br>
-            <input type="checkbox" name="vedajad" value="kaimo"> Kaimo<br>
-            <input type="checkbox" name="vedajad" value="mairolt"> Mairolt<br>
-            <input type="checkbox" name="vedajad" value="raigo"> Raigo<br>
-            <input type="checkbox" name="vedajad" value="toomasj"> ToomasJ<br>
-            <input type="checkbox" name="vedajad" value="tarmo"> Tarmo<br>
-            <input type="checkbox" name="vedajad" value="toomasd"> ToomasD<br>
-            <input type="checkbox" name="vedajad" value="taavi"> Taavi<br>
-            <input type="checkbox" name="vedajad" value="rain"> Rain<br>
-            <input type="checkbox" name="vedajad" value="muu"> <input type="text" name="muu">
+        <div class="block" id="ltkh-vedajad-block">
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="ltkh-indrek" value="indrek">
+                <label for="ltkh-indrek">Indrek</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="ltkh-kaimo" value="kaimo">
+                <label for="ltkh-kaimo">Kaimo</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="ltkh-mairolt" value="mairolt">
+                <label for="ltkh-mairolt">Mairolt</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="ltkh-raigo" value="raigo">
+                <label for="ltkh-raigo">Raigo</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="ltkh-toomasj" value="toomasj">
+                <label for="ltkh-toomasj">Toomas J</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="ltkh-tarmo" value="tarmo">
+                <label for="ltkh-tarmo">Tarmo</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="ltkh-toomasd" value="toomasd">
+                <label for="ltkh-toomasd">Toomas D</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="ltkh-taavi" value="taavi">
+                <label for="ltkh-taavi">Taavi</label>
+            </div>
+            <div class="choice">
+                <input type="checkbox" name="vedajad" id="ltkh-rain" value="rain">
+                <label for="ltkh-rain">Rain</label>
+            </div>
         </div>
 
-        <div class="name">
-            <input type="checkbox" name="topelttasu" value="jah"> Topelttasu<br>
+        <div class="block" id="ltkh-topelt-block">
+            <div class="choice">
+                <input type="checkbox" name="topelttasu" id="ltkh-topelt">
+                <label for="ltkh-topelt">Topelttasu</label>
+            </div>
         </div>
 
-        <div class="name">
-            <input type="radio" name="surma_koht" value="emh"> EMH<br>
-            <input type="radio" name="surma_koht" value="ohh"> ÕHH<br>
-            <input type="radio" name="surma_koht" value="nakkus"> Nakkus<br>
-            <input type="radio" name="surma_koht" value="ekei"> EKEI<br>
-            <input type="radio" name="surma_koht" value="itk"> ITK<br>
-            <input type="radio" name="surma_koht" value="iruemh"> Iru EMH<br>
-            <input type="radio" name="surma_koht" value="piritapansion"> Pirita Pansion<br>
-            <input type="radio" name="surma_koht" value="kiirabi"> Kiirabi<br>
-            <input type="radio" name="surma_koht" value="anastassios"> Anastassios<br>
-            <input type="radio" name="surma_koht" value="memoris"> Memoris<br>
-            <input type="radio" name="surma_koht" value="krema"> Krema<br>
-            <input type="radio" name="surma_koht" value="forsius"> Forsius<br>
-            <input type="radio" name="surma_koht" value="portum"> Portum<br>
-            <input type="radio" name="surma_koht" value="benitakodu"> Benita Kodu<br>
-            <input type="radio" name="surma_koht" value="muu"> <input type="text" name="muu"><br>
+        <div class="name" id="ltkh-surma_koht-block">
+            <div class="choice">
+                <input type="radio" name="surma_koht" id="ltkh-emh" value="emh" checked>
+                <label for="ltkh-emh">EMH</label>
+            </div>
+            <div class="choice">
+                <input type="radio" name="surma_koht" id="ltkh-ohh" value="ohh">
+                <label for="ltkh-ohh">ÕHH</label>
+            </div>
+            <div class="choice">
+                <input type="radio" name="surma_koht" id="ltkh-nakkus" value="nakkus">
+                <label for="ltkh-nakkus">Nakkus</label>
+            </div>
+            <div class="choice">
+                <input type="radio" name="surma_koht" id="ltkh-ekei" value="ekei">
+                <label for="ltkh-ekei">EKEI</label>
+            </div>
+            <div class="choice">
+                <input type="radio" name="surma_koht" id="ltkh-itk" value="itk">
+                <label for="ltkh-itk">ITK</label>
+            </div>
+            <div class="choice">
+                <input type="radio" name="surma_koht" id="ltkh-iruemh" value="iruemh">
+                <label for="ltkh-iruemh">Iru EMH</label>
+            </div>
+            <div class="choice">
+                <input type="radio" name="surma_koht" id="ltkh-piritapansion" value="piritapansion">
+                <label for="ltkh-piritapansion">Pirita Pansion</label>
+            </div>
+            <div class="choice">
+                <input type="radio" name="surma_koht" id="ltkh-kiirabi" value="kiirabi">
+                <label for="ltkh-kiirabi">Kiirabi</label>
+            </div>
+            <div class="choice">
+                <input type="radio" name="surma_koht" id="ltkh-anastasios" value="anastasios">
+                <label for="ltkh-anastasios">Anastasios</label>
+            </div>
+            <div class="choice">
+                <input type="radio" name="surma_koht" id="ltkh-memoris" value="memoris">
+                <label for="ltkh-memoris">Memoris</label>
+            </div>
+            <div class="choice">
+                <input type="radio" name="surma_koht" id="ltkh-krema" value="krema">
+                <label for="ltkh-krema">Krema</label>
+            </div>
+            <div class="choice">
+                <input type="radio" name="surma_koht" id="ltkh-forsius" value="forsius">
+                <label for="ltkh-forsius">Forsius</label>
+            </div>
+            <div class="choice">
+                <input type="radio" name="surma_koht" id="ltkh-portum" value="portum">
+                <label for="ltkh-portum">Portum</label>
+            </div>
+            <div class="choice">
+                <input type="radio" name="surma_koht" id="ltkh-kristin" value="kristin">
+                <label for="ltkh-kristin">Kristin</label>
+            </div>
+            <div class="choice">
+                <input type="radio" name="surma_koht" id="ltkh-benitakodu" value="benita">
+                <label for="ltkh-benitakodu">Benita Kodu</label>
+            </div>
         </div>
-        <div class="name">
-            <input type="submit" value="SALVESTA">
-        </div>
+
+        <button type="submit">Salvesta</button>
     </form>
 
 </body>
