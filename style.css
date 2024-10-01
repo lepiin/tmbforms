@@ -1,76 +1,75 @@
 :root {
-  --dark: #001f3f;
-  --mid: #3a6d8c;
-  --light: #6a9ab0;
+  --dark: #2d2a2e;
+  --light: #e7e8d1;
   --font: "Lato", sans-serif;
 }
 
 body {
-  background-color: var(--light);
-  color: var(--dark);
+  background-color: var(--dark);
+  color: var(--light);
   font-family: var(--font);
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  font-family: var(--font);
+  font-size: 1.5rem;
+  font-weight: 900;
+  background-color: var(--light);
+
+  color: var(--dark);
+  margin: 10px;
+  padding: 10px 100px;
+  border-radius: 10px;
+  border: none;
 }
 
 .bigbtn {
   font-family: var(--font);
   font-size: 2rem;
-  font-weight: bold;
-  background-color: var(--dark);
-  color: var(--light);
+  font-weight: 700;
+  background-color: var(--light);
+  color: var(--dark);
   width: 80%;
   margin: 10px;
-  padding: 40px;
-  border-radius: 10px;
-  border: none;
-}
-
-/* 
-input[type="submit"] {
-  font-family: var(--font);
-  font-size: 1.5rem;
-  font-weight: bold;
-  background-color: var(--mid-blue);
-  color: var(--beige);
-  margin: 10px;
-  padding: 60px;
-  border-radius: 10px;
-  border: none;
-}
-
-h1,
-div {
-  text-align: center;
-}
-
-.name {
-  background-color: var(--light-blue);
-  text-align: left;
-  color: var(--dark-blue);
-  margin: 10%;
   padding: 30px;
-  font-size: 1.3rem;
-  font-weight: bold;
+  border-radius: 10px;
+  border: none;
 }
 
-input[type="submit"] {
+.block {
+  background-color: var(--light);
+  text-align: left;
+  color: var(--dark);
+  margin: 10px;
+  padding: 20px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.textbox {
+  margin: 8px;
+  height: 24px;
+  text-transform: uppercase;
+  font-size: 1.3rem;
   width: 90%;
-  height: 30px;
+  font-weight: 700;
+  background-color: var(--light);
+  font-family: var(--font);
+  color: var(--dark);
+  border: 0;
+}
+
+.choice {
+  margin: 5px;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
-  height: 24px;
+  /* height: 24px; */
   transform: scale(1.5);
 }
-
-input[type="text"] {
-  height: 24px;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  width: 80%;
-  font-weight: bold;
-  text-align: center;
-  background-color: var(--light-blue);
-  font-family: var(--font);
-  color: var(--dark-blue);
-} */

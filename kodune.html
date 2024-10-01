@@ -19,14 +19,14 @@
     <form action="/tacos">
 
         <div class="block" id="kodune-surnu-block">
-            <div class="textbox">
-                <input type="text" id="kodune-perenimi" name="perenimi" placeholder="Perenimi">
+            <div>
+                <input type="text" class="textbox" id="kodune-perenimi" name="perenimi" placeholder="Perenimi" required>
             </div>
-            <div class="textbox">
-                <input type="text" id="kodune-eesnimi" name="eesnimi" placeholder="Eesnimi">
+            <div>
+                <input type="text" class="textbox" id="kodune-eesnimi" name="eesnimi" placeholder="Eesnimi" required>
             </div>
-            <div class="textbox">
-                <input type="text" id="kodune-aadress" name="aadress" placeholder="Aadress">
+            <div>
+                <input type="text" class="textbox" id="kodune-aadress" name="aadress" placeholder="Aadress" required>
             </div>
         </div>
 
@@ -60,6 +60,7 @@
         </div>
 
         <div class="block" id="kodune-vedajad-block">
+
             <div class="choice">
                 <input type="checkbox" name="vedajad" id="kodune-indrek" value="indrek">
                 <label for="kodune-indrek">Indrek</label>
@@ -96,6 +97,7 @@
                 <input type="checkbox" name="vedajad" id="kodune-rain" value="rain">
                 <label for="kodune-rain">Rain</label>
             </div>
+
         </div>
 
         <div class="block" id="kodune-topelt-block">

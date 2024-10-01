@@ -14,28 +14,31 @@
     <title>Politsei</title>
 </head>
 
-<body>
+<body class="politsei">
     <h1>Politsei</h1>
     <form action="/tacos">
 
         <div class="block" id="pol-surnu-block">
-            <h2>surnu:</h2>
-            <div class="textbox">
-                <input type="text" id="pol-perenimi" name="perenimi" placeholder="Perenimi">
+
+            <div>
+                <input type="text" class="textbox" id="pol-perenimi" name="perenimi" placeholder="Perenimi" required>
             </div>
-            <div class="textbox">
-                <input type="text" id="pol-eesnimi" name="eesnimi" placeholder="Eesnimi">
+            <div>
+                <input type="text" class="textbox" id="pol-eesnimi" name="eesnimi" placeholder="Eesnimi" required>
             </div>
-            <div class="textbox">
-                <input type="text" id="pol-isikukood" name="isikukood" placeholder="Isikukood">
+            <div>
+                <input type="text" class="textbox" id="pol-isikukood" name="isikukood" placeholder="Isikukood"
+                    maxlength="11">
             </div>
         </div>
 
         <div class="block" id="pol-politsei-block">
-            <h2>politsei:</h2>
-            <div class="textbox">
-                <input type="text" id="pol-politsei-nimi" name="politsei" placeholder="Politsei esindaja">
+
+            <div>
+                <input type="text" class="textbox" id="pol-politsei-nimi" name="politsei"
+                    placeholder="Politsei esindaja" required>
             </div>
+            <hr>
 
             <div class="choice">
                 <input type="radio" name="jaoskond" id="pol-idaharju" value="idaharju">
@@ -107,8 +110,8 @@
         </div>
 
         <div class="block" id="pol-markused-block">
-            <div class="textbox">
-                <input type="text" id="pol-markused" name="perenimi" placeholder="Märkused">
+            <div>
+                <input type="text" class="textbox" id="pol-markused" name="perenimi" placeholder="Märkused">
             </div>
         </div>
 
